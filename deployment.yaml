@@ -14,11 +14,13 @@ spec:
     spec:
       containers:
       - name: student-results
-        image: your-dockerhub-username/student-results:latest
+        image: srilayam/student-results:latest   # ⚠️ MUST match DockerHub image
         ports:
         - containerPort: 80
 
 ---
+# ⚠️ IMPORTANT: YOU MISSED THIS LINE (VERY IMPORTANT)
+
 apiVersion: v1
 kind: Service
 metadata:
